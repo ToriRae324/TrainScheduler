@@ -37,6 +37,13 @@ $("#submit").on("click", function(event) {
         frequency : frequency,
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
+
+    // Reset Form
+    $("#trainName").val("");
+    $("#destination").val("");
+    $("#firstTrain").val("");
+    $("#frequency").val("");
+
 });
 
 // Retreive info from database
